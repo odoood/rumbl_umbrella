@@ -7,7 +7,6 @@ defmodule InfoSys.Application do
 
   def start(_type, _args) do
     children = [
-      { InfoSys.Counter, 5 },
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
