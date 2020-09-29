@@ -9,6 +9,7 @@ defmodule RumblWeb.Application do
     children = [
       # Start the Telemetry supervisor
       RumblWeb.Telemetry,
+      {Phoenix.PubSub, name: RumblWeb.PubSub},
       # Start the Endpoint (http/https)
       RumblWeb.Endpoint,
       RumblWeb.Presence,
