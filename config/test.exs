@@ -23,3 +23,8 @@ config :logger, level: :warn
 
 # Ease up the number of hashing rounds to speeed up test suite
 config :pbkdf2_elixir, :rounds, 1
+
+# Set http client for testing InfoSys
+config :info_sys, :wolfram,
+  app_id: "1234",
+  http_client: InfoSys.Test.HTTPClient
